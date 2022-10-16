@@ -10,4 +10,4 @@ This application is a random password generator intended for sensitive informati
 
 ## Link
 GitHub Repository: https://github.com/1-those-jacks/password-generator
-GitHub Page: 
+GitHub Page: https://1-those-jacks.github.io/password-generator/
