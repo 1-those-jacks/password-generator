@@ -55,7 +55,8 @@ function generatePassword() {
 	function randomItem(passwordLengthPrompt) {
 		return Math.floor(Math.random() * passwordLengthPrompt);
 	}
-	// for loop works for doing the correction amount of iterations
+	// for loop works for doing the correction amount of iterations.
+	// for loop runs for each instance of the prompts.
 	for (var i = 0; i < Number.parseInt(passwordLengthPrompt); i++) {
 		if (userChoice["Numbers"]) {
 			possibleChars = Numeric[Math.floor(Math.random() * Numeric.length)];
@@ -72,8 +73,7 @@ function generatePassword() {
 		if (userChoice["Special-Char"]) {
 			possibleChars = specialCharacter[Math.floor(Math.random() * specialCharacter.length)];
 			guaranteedChars.push(possibleChars);
-		}
-
+		} 
 		result[i] = guaranteedChars[i];	
 		console.log(result[i], guaranteedChars[i]);
 	}
